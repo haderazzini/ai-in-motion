@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Refuses a push unless the active gh account and the remote owner are both haderazzini (ADR 0007).
+set -euo pipefail
+expected="haderazzini"
+remote_url="$2"
+
+login="$(gh api user --jq .login 2>/dev/null || true)"
+if [[ "$login" != "$expected" ]]; then
+  echo "pre-push: active gh account is '${login:-unknown}', expected '$expected'. Run: gh auth switch -u $expected" >&2
+  exit 1
+fi
+if [[ "$remote_url" != *"github.com/$expected/"* && "$remote_url" != *"github.com:$expected/"* ]]; then
+  echo "pre-push: remote '$remote_url' is not owned by $expected" >&2
+  exit 1
+fi
+email="$(git config user.email)"
+if [[ "$email" == *"web-alva.com"* ]]; then
+  echo "pre-push: commit email is the ALVA address ($email). Set the haderazzini noreply email." >&2
+  exit 1
+fi
