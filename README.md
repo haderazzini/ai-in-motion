@@ -5,8 +5,8 @@ engineering application, runnable code and the references behind every claim.
 
 By **Hader Azzini** · Instagram [@hader.explains.ai](https://www.instagram.com/hader.explains.ai/)
 
-Each episode answers one technical question in 20–45 seconds of video. This repository holds the companion material:
-the full explanation, the equations, the demo code that produces the numbers shown on screen, and an honest list of
+Each episode answers one technical question in a video of about a minute (60–90 seconds). This repository holds the
+companion material: the full explanation, the equations, the demo code that produces the numbers shown on screen, and an honest list of
 the simplifications made.
 
 ## Tracks
