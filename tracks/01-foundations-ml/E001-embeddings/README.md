@@ -1,7 +1,7 @@
 # E001 — Is a cat more like a dog or a car?
 
 > **Track:** Mathematical Foundations & Machine Learning · **Arc 1** (How does a machine represent meaning?) · 1/5 ·
-> **Video:** Instagram (soon) · LinkedIn (soon)
+> **Video:** [Instagram](https://www.instagram.com/reel/DfPTbNbt_SF/) · [LinkedIn](https://www.linkedin.com/posts/hader-azzini_machinelearning-ai-nlp-ugcPost-7522998370001498112-Bxsm/)
 
 ![cover](cover.png)
 
