@@ -1,0 +1,221 @@
+{
+ "toy": {
+  "columns": [
+   "chased",
+   "fed",
+   "fuel"
+  ],
+  "rows": {
+   "cat": [
+    3,
+    2,
+    0
+   ],
+   "dog": [
+    2,
+    3,
+    0
+   ],
+   "car": [
+    0,
+    0,
+    4
+   ]
+  },
+  "dot": {
+   "cat-dog": 12,
+   "cat-car": 0
+  }
+ },
+ "onehot": {
+  "cat-dog": 0.0,
+  "cat-car": 0.0,
+  "dog-car": 0.0,
+  "hot-cold": 0.0,
+  "good-bad": 0.0
+ },
+ "glove": {
+  "dim": 50,
+  "vocab": 400000,
+  "cosine": {
+   "cat-dog": 0.922,
+   "cat-car": 0.364,
+   "dog-car": 0.464,
+   "hot-cold": 0.801,
+   "good-bad": 0.796
+  },
+  "nearest_cat": [
+   [
+    "dog",
+    0.922
+   ],
+   [
+    "rabbit",
+    0.849
+   ],
+   [
+    "monkey",
+    0.804
+   ]
+  ],
+  "cat": [
+   0.45,
+   -0.5,
+   -0.54,
+   -0.02,
+   0.22,
+   0.55,
+   -0.67,
+   -0.69,
+   0.63,
+   -0.2,
+   0.34,
+   0.77,
+   0.9,
+   0.38,
+   0.38,
+   0.27,
+   -0.08,
+   0.61,
+   -1.29,
+   -0.22,
+   -0.62,
+   0.22,
+   0.36,
+   0.44,
+   0.61,
+   -1.16,
+   -1.16,
+   0.36,
+   0.1,
+   -0.78,
+   1.44,
+   0.19,
+   -0.26,
+   0.83,
+   -0.23,
+   0.32,
+   0.14,
+   -0.45,
+   0.33,
+   -0.96,
+   -0.1,
+   0.48,
+   -0.43,
+   0.69,
+   0.91,
+   -0.28,
+   0.42,
+   -1.26,
+   0.71,
+   0.24
+  ],
+  "cat_negative_values": 21,
+  "dot": {
+   "cat-dog": 19.74,
+   "cat-car": 9.19
+  },
+  "norm": {
+   "cat": 4.41,
+   "dog": 4.86,
+   "car": 5.73
+  },
+  "analogy_king-man+woman": {
+   "excluding_inputs": [
+    [
+     "queen",
+     0.861
+    ],
+    [
+     "daughter",
+     0.768
+    ],
+    [
+     "prince",
+     0.764
+    ]
+   ],
+   "including_inputs": [
+    [
+     "king",
+     0.886
+    ],
+    [
+     "queen",
+     0.861
+    ],
+    [
+     "daughter",
+     0.768
+    ]
+   ]
+  },
+  "pca2": {
+   "words": [
+    "cat",
+    "dog",
+    "car",
+    "hot",
+    "cold"
+   ],
+   "points": [
+    [
+     -0.006,
+     2.554
+    ],
+    [
+     -0.295,
+     2.369
+    ],
+    [
+     -3.691,
+     -1.872
+    ],
+    [
+     1.578,
+     -1.4
+    ],
+    [
+     2.414,
+     -1.652
+    ]
+   ],
+   "explained_variance": [
+    0.451,
+    0.417
+   ]
+  }
+ },
+ "minilm": {
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "dim": 384,
+  "cosine": {
+   "cat-dog": 0.661,
+   "cat-car": 0.463,
+   "dog-car": 0.476,
+   "hot-cold": 0.519,
+   "good-bad": 0.587
+  },
+  "search": {
+   "query": "I forgot my login credentials",
+   "ranked": [
+    [
+     0.49,
+     "To change your password, open Settings and choose Security."
+    ],
+    [
+     0.072,
+     "Our office is closed on public holidays."
+    ],
+    [
+     0.0,
+     "Shipping usually takes three to five business days."
+    ],
+    [
+     -0.029,
+     "Cats and dogs are the most common household pets."
+    ]
+   ]
+  }
+ }
+}

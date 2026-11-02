@@ -13,7 +13,7 @@ the simplifications made.
 
 | Track | Episodes |
 |---|---|
-| 1 · Mathematical Foundations & Machine Learning | *E001 — How Do Embeddings Capture Meaning? (in production)* |
+| 1 · Mathematical Foundations & Machine Learning | [E001 — How Do Embeddings Capture Meaning?](tracks/01-foundations-ml/E001-embeddings/) |
 | 2 · Neural Networks & Large Language Models | — |
 | 3 · Applied AI Engineering | — |
 | 4 · Evaluation, Optimization & Production | — |
