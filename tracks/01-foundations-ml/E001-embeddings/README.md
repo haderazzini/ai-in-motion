@@ -1,6 +1,6 @@
 # E001 — Is a cat more like a dog or a car?
 
-> **Track:** Mathematical Foundations & Machine Learning · **Arc 1** (How does a machine represent meaning?) · 1/5 ·
+> **Track:** Mathematical Foundations & Machine Learning · **Arc 1** (How does a machine represent meaning?) · 1/6 ·
 > **Video:** [Instagram](https://www.instagram.com/reel/DfPTbNbt_SF/) · [LinkedIn](https://www.linkedin.com/posts/hader-azzini_machinelearning-ai-nlp-ugcPost-7522998370001498112-Bxsm/)
 
 ![cover](cover.png)
@@ -40,7 +40,7 @@ neighbours add up, unshared ones contribute nothing.
 **Cosine similarity.** Real models compare vectors by the **angle** between them, which is the dot product after
 scaling both vectors to length 1:
 
-$$\cos\theta = \frac{\mathbf{u}\cdot\mathbf{v}}{\lVert\mathbf{u}\rVert\,\lVert\mathbf{v}\rVert} \in [-1, 1]$$
+$$\cos\theta = \frac{\mathbf{u}\cdot\mathbf{v}}{\lVert\mathbf{u}\rVert \lVert\mathbf{v}\rVert} \in [-1, 1]$$
 
 With GloVe 50-d vectors, the raw dot products are $\mathbf{cat}\cdot\mathbf{dog} = 19.74$ and
 $\mathbf{cat}\cdot\mathbf{car} = 9.19$; the lengths are 4.41 (*cat*), 4.86 (*dog*) and 5.73 (*car*), so
@@ -64,7 +64,7 @@ The video keeps one test on screen — *More like cat? dog / car* — and scores
 Embeddings are the first step of search engines and chatbots: text is turned into vectors, and "similar meaning"
 becomes "nearby vectors". With a modern sentence encoder (all-MiniLM-L6-v2), the query *"I forgot my login
 credentials"* ranks *"To change your password, open Settings and choose Security."* first (cosine 0.49) — although
-the two share no words. This is the retrieval step of RAG (E003–E004).
+the two share no words. This is the retrieval step of RAG (E004–E005).
 
 ## Run it
 ```bash
@@ -82,7 +82,7 @@ neighbours, the analogy check, and the MiniLM search example. Runs on CPU.
   compression of the full table (related to matrix factorization [Levy14]). That is also why some numbers are negative.
 - **Tokens ≈ words.** The ~6 billion are tokens (words, numbers, punctuation).
 - **"Meaning" = similarity of use.** Embeddings capture how words are used, which is related to meaning but not the
-  same: *hot* and *cold* are close (0.80), because they appear in the same contexts (E005).
+  same: *hot* and *cold* are close (0.80), because they appear in the same contexts (E006).
 - **One vector per word.** Static embeddings give *bank* (river) and *bank* (money) the same vector; contextual models
   fix this (Arc 2).
 - **Bias.** Embeddings inherit the biases of their training text; analogy demos can exaggerate them: *king − man +
@@ -101,7 +101,8 @@ neighbours, the analogy check, and the MiniLM search example. Runs on CPU.
 - P. Lewis et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS. arXiv:2005.11401.
 - [Nissim20] M. Nissim, R. van Noord, R. van der Goot (2020). Fair Is Better than Sensational. *Computational
   Linguistics*, 46(2). arXiv:1905.09866.
-- D. Jurafsky, J. H. Martin. *Speech and Language Processing*, 3rd ed. draft, "Vector Semantics and Embeddings".
+- D. Jurafsky, J. H. Martin. *Speech and Language Processing*, 3rd ed. draft (Aug 2026), ch. 5
+  "Embeddings", §5.4 "Cosine for Measuring Similarity". https://web.stanford.edu/~jurafsky/slp3/
 
 ---
 Text and figures: CC BY 4.0 · Code: MIT · © Hader Azzini
