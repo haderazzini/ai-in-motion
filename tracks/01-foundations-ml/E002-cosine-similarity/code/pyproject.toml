@@ -1,0 +1,12 @@
+[project]
+name = "e002-cosine-similarity"
+version = "0.1.0"
+description = "AI in Motion E002 — Why measure the angle? Reproduces every number shown in the video."
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "fastembed>=0.4",
+]
+
+[tool.uv]
+package = false
