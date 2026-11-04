@@ -76,15 +76,44 @@ $\mathbf{dog}\cdot\mathbf{you} = 20.04$ beats $\mathbf{dog}\cdot\mathbf{cat} = 1
 The video keeps E001's test — *More like cat?* — and breaks it:
 
 1. **Recall:** E001's table; multiply and add gives *dog* 12, *car* 0.
+
+   <img src="frames/step-01.png" width="320" alt="Step 1: Recall">
+
 2. **Add *it*:** it got chased, it was fed, it needs fuel — a row of tens.
+
+   <img src="frames/step-02.png" width="320" alt="Step 2: Add it">
+
 3. **Break:** *it* wins every scoreboard: 50, 50, 40.
+
+   <img src="frames/step-03.png" width="320" alt="Step 3: Break">
+
 4. **Cause:** in cat·it the tens do the work; *it* wins by showing up often. As arrows, *it* is the longest.
+
+   <img src="frames/step-04.png" width="320" alt="Step 4: Cause">
+
 5. **Fix:** a length column; each row is divided by its length; every length becomes 1.
+
+   <img src="frames/step-05.png" width="320" alt="Step 5: Fix">
+
 6. **Angle:** only the angle is left; two arrows always lie on one flat sheet.
+
+   <img src="frames/step-06.png" width="320" alt="Step 6: Angle">
+
 7. **Shadow:** an arrow swings away from *cat*; its shadow shrinks from 1 to 0 at a right angle (*car*).
+
+   <img src="frames/step-07.png" width="320" alt="Step 7: Shadow">
+
 8. **Name it:** shadow = cos(angle) = cosine similarity; for length-1 arrows, shadow = multiply and add.
+
+   <img src="frames/step-08.png" width="320" alt="Step 8: Name it">
+
 9. **Real model:** GloVe's 50 numbers for *cat* and *dog*, divided, multiplied and added: 0.92.
+
+   <img src="frames/step-09.png" width="320" alt="Step 9: Real model">
+
 10. **Open:** 21 of *cat*'s 50 numbers are negative — a word can't show up −1 times. So what are they? → E003.
+
+   <img src="frames/step-10.png" width="320" alt="Step 10: Open">
 
 ## Where engineers meet this
 Search systems and vector databases compare embeddings by cosine, and they make it cheap by dividing by the length
