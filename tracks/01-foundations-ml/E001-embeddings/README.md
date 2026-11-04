@@ -52,13 +52,27 @@ subject of E002.
 The video keeps one test on screen — *More like cat? dog / car* — and scores every attempt on it:
 
 1. **Letters:** *car* wins (one letter apart). The cause: letters carry spelling, not meaning.
+
+   <img src="frames/step-01.png" width="320" alt="Step 1: Letters">
+
 2. **The words around them:** *cat* and *dog* share *chased* and *fed*; *car* only has *fuel*. In a table, *cat* and
    *dog* fill the same columns — *dog* wins, for the right reason.
+
+   <img src="frames/step-02.png" width="320" alt="Step 2: The words around them">
+
 3. **Counts → vectors → dot product:** each row is a vector; multiply and add gives 12 for *dog*, 0 for *car*.
+
+   <img src="frames/step-03.png" width="320" alt="Step 3: Counts → vectors → dot product">
+
 4. **At scale:** a real table has a row and a column for every word — 400,000 words in GloVe, counted over about
    6 billion words of text. The model squeezes each row into a short list: *cat* in 50 numbers. They are no longer
    counts — 21 of the 50 are negative.
+
+   <img src="frames/step-04.png" width="320" alt="Step 4: At scale">
+
 5. **Real scores:** similarity 0.92 for *dog*, 0.36 for *car*. These scores measure an angle — why? → E002.
+
+   <img src="frames/step-05.png" width="320" alt="Step 5: Real scores">
 
 ## Where engineers meet this
 Embeddings are the first step of search engines and chatbots: text is turned into vectors, and "similar meaning"
