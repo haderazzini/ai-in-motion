@@ -1,7 +1,7 @@
 # E002 — Why measure the angle?
 
 > **Track:** Mathematical Foundations & Machine Learning · **Arc 1** (How does a machine represent meaning?) · 2/6 ·
-> **Video:** Instagram (soon) · LinkedIn (soon)
+> **Video:** [Instagram](https://www.instagram.com/reel/DfVIjTgtpg3/) · [LinkedIn](https://www.linkedin.com/posts/hader-azzini_machinelearning-ai-nlp-ugcPost-7523819503214948352-UUyF/)
 
 ![cover](cover.png)
 
